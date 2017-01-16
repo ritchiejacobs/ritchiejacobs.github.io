@@ -1,0 +1,45 @@
+.menu-wrapper {
+	background-color: #fff;
+	border-bottom: 2px solid #eee;
+    opacity: 0;
+	position: fixed;
+    transition: opacity 300ms;
+	width: 100%;
+	z-index: -1;
+
+    &.menu-visible {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.menu {
+	ul {
+		list-style: none;
+		padding-left: 0;
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		color: $text-color-menu;
+		display: block;
+		font-family: $font-family-menu;
+		font-size: $font-size-menu;
+		letter-spacing: 0.08em;
+		padding: 0.6em 0.8em;
+		text-decoration: none;
+		text-transform: uppercase;
+
+        transition: color 0.5s ease;
+	}
+
+	a:hover,
+	a.active {
+		color: $text-color-menu-hover;
+		font-weight: 600;
+	}
+}

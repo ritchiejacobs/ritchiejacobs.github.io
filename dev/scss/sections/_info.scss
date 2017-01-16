@@ -1,0 +1,30 @@
+.info {
+	.section-intro {
+		span {
+			color: $color-primary-darker;
+			display: block;
+			font-weight: $font-weight-info-intro-span;
+		}
+	}
+
+	.section-content {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 410px;
+		text-align: center;
+
+		@include mq-tablet  { max-width: 600px; }
+	}
+
+	.section-extra {
+		font-size: $font-size-section-extra;
+		margin-top: 60px;
+		text-align: center;
+
+		p {
+			color: $color-grey;
+			line-height: $line-height-section-intro;
+			margin-bottom: 30px;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+.footer {
+	background-color: $color-primary;
+	background-image: url("../img/footer-bg-stars.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	overflow: hidden;
+	text-align: center;
+
+	transition: background-size 0.5s ease;
+}
+
+.footer:hover {
+	background-size: 75%;
+}
+
+.footer p {
+	color: $color-primary-darker;
+	font-size: 0.95em;
+	padding: 3em 0;
+}
+
+.footer #social {
+	ul {
+		margin: 0;
+		padding: 5em 0 0;
+	}
+
+	li {
+		display: inline-block;
+        padding: .2em;
+	}
+
+	a {
+		background-color: $color-primary-darker;
+        border-radius: 3px;
+		color: $color-primary;
+		display: block;
+        padding: .2em .4em;
+        text-decoration: none;
+
+        svg {
+            display: block;
+            fill: $color-primary;
+            width: 3em;
+
+        	&:hover {
+        		fill: $color-primary-lighter;
+        	}
+        }
+	}
+}

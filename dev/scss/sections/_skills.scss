@@ -1,0 +1,23 @@
+.column {
+	display: inline-block;
+	margin: 20px 30px;
+	max-width: 320px;
+	text-align: center;
+	vertical-align: top;
+
+	img {
+		display: inline-block;
+	}
+}
+
+.skill-detail {
+	margin-top: 0.5em;
+}
+
+.skill-list {
+	color: $text-color-skill-list;
+	font-size: $font-size-skill-list;
+	line-height: 1.6em;
+
+	@include mq-tablet  { font-size: $font-size-skill-list*1.1; }
+}

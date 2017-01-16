@@ -1,0 +1,60 @@
+/*************************/
+/* COLORS                */
+/*************************/
+$color-primary: #2c3e50;
+$color-primary-darker: darken($color-primary, 8%);
+$color-primary-lighter: lighten($color-primary, 20%);
+$color-grey: #999;
+
+$text-color: $color-primary;
+$text-color-menu: $color-grey;
+$text-color-menu-hover: $color-primary;
+$text-color-h1: #ffffff;
+$text-color-h2: $color-primary-darker;
+$text-color-section-intro: $color-grey;
+$text-color-skill-list: $color-grey;
+
+$bg-color-intro: $color-primary;
+$bg-color-work: #EDEDDB;
+
+$btn-bgc: #3498db;
+
+/*************************/
+/* TYPOGRAPHY            */
+/*************************/
+$font-family-primary: "Open Sans", Arial, Helvetica, sans-serif;
+$font-family-secondary: "Avenir Next", Verdana, Geneva, sans-serif;
+$font-family-menu: $font-family-secondary;
+$font-family-h1: $font-family-secondary;
+$font-family-h2: $font-family-secondary;
+$font-family-h3: $font-family-secondary;
+
+$font-size: 0.9em;
+$font-size-menu: 0.85em;
+$font-size-h1: 1em;
+$font-size-h1-span: 2.6em;
+$font-size-h2: 0.95em;
+$font-size-h3: 1.2em;
+$font-size-h4: 1.1em;
+$font-size-section-intro: 1.1em;
+$font-size-section-extra: 1.1em;
+$font-size-skill-list: 0.7em;
+
+$font-weight-h2: 				600;
+$font-weight-btn: 				600;
+$font-weight-section-intro: 	300;
+$font-weight-project-title: 	600;
+$font-weight-info-intro-span: 	600;
+$font-weight-info-extra-span: 	600;
+
+$line-height: 1.4em;
+$line-height-section-intro: 1.6em;
+$line-height-section-extra: 1.6em;
+
+/*************************/
+/* MIXINS                */
+/*************************/
+@mixin mq-smartphone { @media screen and (min-width: 320px)  { @content; } }
+@mixin mq-tablet     { @media screen and (min-width: 768px)  { @content; } }
+@mixin mq-netbook    { @media screen and (min-width: 1024px) { @content; } }
+@mixin mq-desktop    { @media screen and (min-width: 1600px) { @content; } }
