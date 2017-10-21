@@ -13,7 +13,6 @@
   // Elements
   &__head {
     align-items: center;
-    // background-color: darken($sidebar-bg, 2%);
     color: $sidebar-color;
     display: flex;
     flex-direction: row;
@@ -24,7 +23,27 @@
     border-radius: 50%;
     height: 60px;
     margin-right: 1rem;
+    position: relative;
     width: 60px;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 60px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 60px;
+    }
+
+    &::before {
+      background-color: $sidebar-bg;
+    }
+
+    &::after {
+      background-color: darken($sidebar-bg, 2%);
+      border-radius: 50%;
+    }
   }
 
   &__title {
