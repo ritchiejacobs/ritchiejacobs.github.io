@@ -43,3 +43,29 @@
     margin-top: 0;
   }
 }
+
+.pagination {
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  &__btn {
+    color: $body-color;
+    display: block;
+    flex-basis: 50%;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+
+    &:first-child {
+      border-right: 1px solid #eee;
+    }
+  }
+
+  &__btn--disabled {
+    // background-color: #f5f5f5;
+    color: lighten($body-color, 50%);
+  }
+}
