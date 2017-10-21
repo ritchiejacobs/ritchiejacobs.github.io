@@ -71,11 +71,7 @@
     padding: $sidebar-padding-y $sidebar-padding-x;
     text-decoration: none;
 
-    &:hover {
-      background-color: darken($sidebar-bg, 2%);
-    }
-
-    &:active,
+    &:hover,
     &--active {
       background-color: darken($sidebar-bg, 3%);
     }
