@@ -1,0 +1,67 @@
+.sidebar {
+  background-color: $sidebar-bg;
+  width: 100%;
+
+  @media (min-width: $sidebar-breakpoint) {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: $sidebar-width;
+  }
+
+  // Elements
+  &__head {
+    align-items: center;
+    // background-color: darken($sidebar-bg, 2%);
+    color: $sidebar-color;
+    display: flex;
+    flex-direction: row;
+    padding: $sidebar-padding-y * 4 $sidebar-padding-x;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    height: 60px;
+    margin-right: 1rem;
+    width: 60px;
+  }
+
+  &__title {
+    h1 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-decoration: none;
+    }
+
+    p {
+      color: $sidebar-color;
+      font-size: .8rem;
+      font-weight: 100;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    color: $sidebar-color;
+    display: block;
+    font-size: $sidebar-font-size;
+    padding: $sidebar-padding-y $sidebar-padding-x;
+    text-decoration: none;
+
+    &:hover {
+      background-color: darken($sidebar-bg, 2%);
+    }
+
+    &:active,
+    &--active {
+      background-color: darken($sidebar-bg, 3%);
+    }
+  }
+
+  // Modifiers
+
+}

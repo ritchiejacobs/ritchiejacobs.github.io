@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <div class="sidebar__head">
+    <img class="sidebar__avatar" src="https://twitter.com/ritchiejacobs/profile_image?size=bigger">
+    <div class="sidebar__title">
+      <h1>{{ site.title }}</h1>
+      <p>Front-end Developer</p>
+    </div>
+  </div>
+  <nav class="sidebar__nav">
+    <a class="sidebar__link{% if page.url == '/' %} sidebar__link--active{% endif %}" href="{{ site.url }}">Blog</a>
+    {% for node in site.pages %}
+      {% if node.title != null %}
+        {% if node.layout == "page" %}
+          <a class="sidebar__link{% if page.url == node.url %} sidebar__link--active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </nav>
+</div>
