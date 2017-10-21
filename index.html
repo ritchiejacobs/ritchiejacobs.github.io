@@ -7,7 +7,10 @@ title: Home
   {% for post in paginator.posts %}
     <a class="post" href="{{ post.url }}">
       <h2 class="post__title">{{ post.title }}</h2>
-      <span class="post__date">{{ post.date | date_to_string }}</span>
+      <div class="post__meta">
+        <span class="post__meta-date">{{ post.date | date_to_string }}</span>
+        <span class="post__meta-tags">{{ post.tags }}</span>
+      </div>
       <p class="post__intro">{{ post.content | strip_html | truncatewords: 40 }}</p>
     </a>
   {% endfor %}

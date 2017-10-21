@@ -15,27 +15,36 @@
   margin-top: 1rem;
   padding: 4rem 2rem;
   text-decoration: none;
+  transition: background-color .3s, color .3s;
 
   &:first-child {
     margin-top: 0;
   }
 
-    &:hover {
-      background-color: darken(#f8f8f8, 1%);
-      color: lighten($sidebar-bg, 25%);
-    }
+  &:hover {
+    background-color: darken(#f8f8f8, 2%);
+    color: $sidebar-bg;
+  }
 
   &__title {
     margin-bottom: 0;
     margin-top: 0;
   }
 
-  &__date {
+  &__meta {
     color: #bdc3c7;
-    display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: .2rem;
     font-size: .9375rem;
+  }
+
+  &__meta-tags {
+    &::before {
+      content: '\2022';
+      color: darken(#bdc3c7, 5%);
+      margin-left: .2em;
+      margin-right: .5em;
+    }
   }
 
   &__intro {

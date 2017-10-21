@@ -74,6 +74,7 @@
     font-size: $sidebar-font-size;
     padding: $sidebar-padding-y $sidebar-padding-x;
     text-decoration: none;
+    transition: background-color .3s;
 
     &:hover,
     &--active {
