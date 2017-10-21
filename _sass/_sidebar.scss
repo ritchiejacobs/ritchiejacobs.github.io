@@ -16,7 +16,11 @@
     color: $sidebar-color;
     display: flex;
     flex-direction: row;
-    padding: $sidebar-padding-y * 4 $sidebar-padding-x;
+    padding: $sidebar-padding-y * 2 $sidebar-padding-x;
+
+    @media (min-width: $sidebar-breakpoint) {
+      padding: $sidebar-padding-y * 4 $sidebar-padding-x;
+    }
   }
 
   &__avatar {
