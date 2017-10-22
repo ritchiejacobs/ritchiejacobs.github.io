@@ -1,5 +1,6 @@
 .sidebar {
   background-color: $sidebar-bg;
+  position: relative;
   width: 100%;
 
   @media (min-width: $sidebar-breakpoint) {
@@ -11,7 +12,7 @@
   }
 
   // Elements
-  &__head {
+  &__header {
     align-items: center;
     color: $sidebar-color;
     display: flex;
@@ -80,6 +81,15 @@
     &--active {
       background-color: darken($sidebar-bg, 2%);
       color: lighten($color: $sidebar-bg, $amount: 60%);
+    }
+  }
+
+  &__footer {
+    bottom: 0;
+    padding: $sidebar-padding-y $sidebar-padding-x;
+
+    @media (min-width: $sidebar-breakpoint) {
+      position: absolute;
     }
   }
 
