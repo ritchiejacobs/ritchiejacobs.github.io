@@ -69,16 +69,17 @@
   }
 
   &__link {
-    color: $sidebar-color;
+    color: lighten($color: $sidebar-bg, $amount: 40%);
     display: block;
     font-size: $sidebar-font-size;
     padding: $sidebar-padding-y $sidebar-padding-x;
     text-decoration: none;
-    transition: background-color .3s;
+    transition: background-color .3s, color .3s;
 
     &:hover,
     &--active {
       background-color: darken($sidebar-bg, 2%);
+      color: lighten($color: $sidebar-bg, $amount: 60%);
     }
   }
 

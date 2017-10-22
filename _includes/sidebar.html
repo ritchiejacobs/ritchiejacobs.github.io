@@ -7,7 +7,7 @@
     </div>
   </div>
   <nav class="sidebar__nav">
-    <a class="sidebar__link{% if page.url != '/about' %} sidebar__link--active{% endif %}" href="{{ site.url }}">Blog</a>
+    <a class="sidebar__link{% if page.url != '/about' %} sidebar__link--active{% endif %}" href="{{ site.url }}">Articles</a>
     {% for node in site.pages %}
       {% if node.title != null %}
         {% if node.layout == "page" %}
@@ -15,5 +15,6 @@
         {% endif %}
       {% endif %}
     {% endfor %}
+    <a class="sidebar__link" href="#">Contact</a>
   </nav>
 </div>
