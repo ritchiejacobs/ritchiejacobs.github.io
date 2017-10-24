@@ -13,9 +13,19 @@ In this post we're going more into detail when to use `constructor` and `ngOnIni
 ## Constructor
 Lorem ipsum dolor sit amet, ad vis adhuc periculis principes, dicunt quodsi inermis ei vix, eos ut elitr nominavi suscipit. At usu quod possit. Vidisse commune patrioque mel ut, ea numquam accusata per. Novum graeco ad vel.
 
+```js
+const element = document.querySelector('.foo');
+
+// set: here we write the value
+element.className = 'setting-a-property';
+
+// get: we read the value
+console.log(element.className); // 'setting-a-property';
+```
+
 Putant habemus intellegam eam ne, his ex antiopam ocurreret, quo ut legendos cotidieque. Eu justo melius pro. Ut est porro tractatos, ne sit agam ocurreret.
 
-```
+```js
 var Element = (function() {
   function Element() {}
   Object.defineProperty(Element.prototype, 'className', {
@@ -37,7 +47,7 @@ Lorem ipsum dolor sit amet, ad vis adhuc periculis principes, dicunt quodsi iner
 
 Putant habemus intellegam eam ne, his ex antiopam ocurreret, quo ut legendos cotidieque. Eu justo melius pro. Ut est porro tractatos, ne sit agam ocurreret.
 
-```
+```js
 @Component({...})
 export class DateComponent {
   private _dateObject: Date;

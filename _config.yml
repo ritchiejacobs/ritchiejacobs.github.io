@@ -2,7 +2,6 @@
 title: Ritchie Jacobs
 description: >-
   Articles, tips and tricks on the latest front-end topics like Angular, CSS3 and HTML5.
-tagline: Angular, CSS3 and HTML5
 paginate: 5
 paginate_path: "/page:num/"
 permalink: /:title

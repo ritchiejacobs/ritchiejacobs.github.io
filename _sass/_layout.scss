@@ -1,6 +1,6 @@
 .content {
-  max-width: $content-width;
-  padding: $content-padding-x;
+  // max-width: $content-width;
+  // padding: $content-padding-x;
 
   @media (min-width: $sidebar-breakpoint) {
     margin-left: $sidebar-width;
@@ -80,12 +80,21 @@
 
 .article {
   &__meta {
+    margin-left: 3rem;
+    margin-right: 3rem;
+
     span {
       background-color: #f5f5f5;
       border-radius: 15px;
       color: #999;
       padding: .25em .5em;
     }
+  }
+
+  h1, h2, h3, p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: 720px;
   }
 
   h1 {
