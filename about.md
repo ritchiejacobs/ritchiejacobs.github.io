@@ -4,15 +4,13 @@ title: About
 permalink: /about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm Ritchie Jacobs, a passionate front-end developer from Belgium who enjoys crafting responsive websites, building interactive applications and experimenting with new technologies.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I'm currently active as Front-end developer at [Xpenditure](https://xpenditure.com).
 
-
-[jekyll-organization]: https://github.com/jekyll
+## Links
+- [Twitter](https://twitter.com/ritchiejacobs)
+- [Github](https://github.com/ritchiejacobs)
+- [Codepen](https://codepen.io/ritchiejacobs)
