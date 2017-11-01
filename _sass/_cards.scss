@@ -2,7 +2,7 @@
   background-color: $card-bg;
   color: $card-color;
   display: block;
-  padding: $padding-y $padding-x;
+  padding: 2rem;
   max-width: $breakpoint-sm;
 
   &:hover {
@@ -16,11 +16,16 @@
 
   &__meta {
     font-size: $font-size-sm;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
   }
 
   &__meta-tags {
     margin-left: 1rem;
+  }
+
+  &__intro {
+    margin-bottom: 0;
   }
 
   // Modifiers
