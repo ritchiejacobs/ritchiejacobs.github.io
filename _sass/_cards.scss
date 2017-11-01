@@ -2,7 +2,7 @@
   background-color: $card-bg;
   color: $card-color;
   display: block;
-  padding: 2rem;
+  padding: 4rem 2rem;
   max-width: $breakpoint-sm;
 
   &:hover {
@@ -15,6 +15,7 @@
   }
 
   &__meta {
+    color: lighten($card-color, 50%);
     font-size: $font-size-sm;
     margin-bottom: 1.5rem;
     margin-top: .5rem;
