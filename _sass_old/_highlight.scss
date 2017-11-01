@@ -1,21 +1,21 @@
 pre {
   background-color: darken($sidebar-bg, 2.5%);
-  // display: block;
-  // // font-size: $font-size-sm;
-  // margin-bottom: 2rem;
-  // margin-top: 2rem;
-  // overflow-x: auto;
-  // padding: 3rem 1rem;
+  display: block;
+  font-size: $font-size-sm;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+  padding: 3rem 1rem;
 
-  // @media (min-width: $sidebar-breakpoint) {
-  //   padding: 3rem;
-  // }
+  @media (min-width: $sidebar-breakpoint) {
+    padding: 3rem;
+  }
 }
 
 p > code {
-  // background-color: #eee;
-  // // font-size: $font-size-sm;
-  // padding: .25em .5em;
+  background-color: #eee;
+  font-size: $font-size-sm;
+  padding: .25em .5em;
 }
 
 .highlight { color: #f8f8f2; }

@@ -3,10 +3,8 @@
 # only main files contain this front matter, not partials.
 ---
 
-@import 'variables';
+@import 'settings';
 @import 'normalize';
-@import 'base';
+@import 'global';
 @import 'highlight';
-@import 'layout';
 @import 'sidebar';
-@import 'article';

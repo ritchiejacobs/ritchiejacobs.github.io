@@ -1,96 +1,58 @@
 .sidebar {
   background-color: $sidebar-bg;
-  position: relative;
-  width: 100%;
-
-  @media (min-width: $sidebar-breakpoint) {
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: $sidebar-width;
-  }
+  color: $sidebar-color;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: $sidebar-width;
 
   // Elements
   &__header {
     align-items: center;
-    color: $sidebar-color;
     display: flex;
-    flex-direction: row;
-    padding: $sidebar-padding-y * 2 $sidebar-padding-x;
+    padding: 3rem 1rem;
 
-    @media (min-width: $sidebar-breakpoint) {
-      padding: $sidebar-padding-y * 4 $sidebar-padding-x;
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: $font-size-sm;
+      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 
   &__avatar {
-    border-radius: 50%;
-    height: 60px;
+    border-radius: 100%;
+    height: 4rem;
     margin-right: 1rem;
-    position: relative;
-    width: 60px;
-
-    &::before,
-    &::after {
-      content: '';
-      height: 60px;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 60px;
-    }
-
-    &::before {
-      background-color: $sidebar-bg;
-    }
-
-    &::after {
-      background-color: darken($sidebar-bg, 2%);
-      border-radius: 50%;
-    }
+    width: 4rem;
   }
 
-  &__title {
-    h1 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      margin-bottom: 0;
-      margin-top: 0;
-      text-decoration: none;
-    }
-
-    p {
-      color: $sidebar-color;
-      font-size: .8rem;
-      font-weight: 100;
-      margin-bottom: 0;
-      margin-top: 0;
-    }
+  &__nav {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   &__link {
-    color: lighten($color: $sidebar-bg, $amount: 40%);
+    color: $sidebar-color;
     display: block;
-    font-size: $sidebar-font-size;
-    padding: $sidebar-padding-y $sidebar-padding-x;
-    text-decoration: none;
-    transition: background-color .3s, color .3s;
+    font-size: $font-size-sm;
+    padding: 1rem;
 
-    &:hover,
     &--active {
-      background-color: darken($sidebar-bg, 2%);
-      color: lighten($color: $sidebar-bg, $amount: 60%);
+      background-color: darken($sidebar-bg, 2.5%);
     }
   }
 
   &__footer {
     bottom: 0;
-    padding: $sidebar-padding-y $sidebar-padding-x;
-
-    @media (min-width: $sidebar-breakpoint) {
-      position: absolute;
-    }
+    padding: 1rem;
+    position: absolute;
   }
 
   // Modifiers
