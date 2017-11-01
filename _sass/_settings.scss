@@ -30,3 +30,10 @@ $sidebar-header-color: #ecf0f1;
 $nav-bg-active: darken($sidebar-bg, 2.5%);
 $nav-color: lighten($sidebar-bg, 50%);
 $nav-color-active: lighten($sidebar-bg, 65%);
+
+/*------------------------------------*\
+  SIDEBAR
+\*------------------------------------*/
+$card-bg: darken($body-bg, 2.5%);
+$card-bg-hover: darken($body-bg, 4%);
+$card-color: $sidebar-bg;

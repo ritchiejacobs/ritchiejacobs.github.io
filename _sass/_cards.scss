@@ -1,0 +1,28 @@
+.card {
+  background-color: $card-bg;
+  color: $card-color;
+  display: block;
+  padding: $padding-y $padding-x;
+  max-width: $breakpoint-sm;
+
+  &:hover {
+    background-color: $card-bg-hover;
+  }
+
+  // Elements
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__meta {
+    font-size: $font-size-sm;
+    margin-bottom: 1rem;
+  }
+
+  &__meta-tags {
+    margin-left: 1rem;
+  }
+
+  // Modifiers
+
+}
