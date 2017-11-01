@@ -15,9 +15,16 @@ $body-bg: $white;
 $body-color: $black;
 $body-line-height: 1.5;
 
+$padding-x: 2rem;
+$padding-y: 1rem;
+
 /*------------------------------------*\
   SIDEBAR
 \*------------------------------------*/
-$sidebar-bg: $black;
-$sidebar-color: $white;
+$sidebar-bg: #312d35;
 $sidebar-width: 18rem;
+$sidebar-header-color: #ecf0f1;
+
+$nav-bg-active: darken($sidebar-bg, 2.5%);
+$nav-color: lighten($sidebar-bg, 50%);
+$nav-color-active: lighten($sidebar-bg, 65%);
