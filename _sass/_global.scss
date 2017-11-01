@@ -29,7 +29,17 @@ p {
 }
 
 a {
+  color: $link-color;
   text-decoration: none;
+
+  &:hover {
+    color: darken($link-color, 10%);
+  }
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
 }
 
 /*------------------------------------*\
@@ -41,4 +51,8 @@ a {
   @media (min-width: $breakpoint-sm) {
     margin-left: $sidebar-width;
   }
+}
+
+.page {
+  max-width: $breakpoint-sm;
 }

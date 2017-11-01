@@ -11,7 +11,7 @@
   }
 
   &__meta {
-    color: lighten($card-color, 50%);
+    color: $post-meta-color;
     font-size: $post-meta-font-size;
     margin-bottom: 1.5rem;
     margin-top: .5rem;

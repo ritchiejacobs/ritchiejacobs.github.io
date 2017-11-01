@@ -7,6 +7,7 @@
 
   &:hover {
     background-color: $card-bg-hover;
+    color: $card-color-hover;
   }
 
   // Elements
@@ -15,7 +16,7 @@
   }
 
   &__meta {
-    color: lighten($card-color, 50%);
+    color: $card-meta-color;
     font-size: $font-size-sm;
     margin-bottom: 1.5rem;
     margin-top: .5rem;

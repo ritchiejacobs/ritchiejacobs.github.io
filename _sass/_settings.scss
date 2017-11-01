@@ -12,13 +12,15 @@ $font-size: 1rem;
 $font-size-sm: .875rem;
 
 $body-bg: $white;
-$body-color: $black;
+$body-color: #312d35;
 $body-line-height: 1.5;
 
 $padding-x: 2rem;
 $padding-y: 1rem;
 
 $breakpoint-sm: 48rem;
+
+$link-color: #3498db;
 
 /*------------------------------------*\
   SIDEBAR
@@ -36,10 +38,13 @@ $nav-color-active: lighten($sidebar-bg, 65%);
 \*------------------------------------*/
 $card-bg: darken($body-bg, 2.5%);
 $card-bg-hover: darken($body-bg, 4%);
-$card-color: $sidebar-bg;
+$card-color: lighten($sidebar-bg, 15%);
+$card-color-hover: $sidebar-bg;
+$card-meta-color: lighten($sidebar-bg, 50%);
 
 /*------------------------------------*\
   POST
 \*------------------------------------*/
 $post-font-size: 1.0625rem;
+$post-meta-color: lighten($sidebar-bg, 35%);
 $post-meta-font-size: .95rem;

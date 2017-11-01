@@ -51,6 +51,10 @@
     font-size: $font-size-sm;
     padding: $padding-y $padding-x;
 
+    &:hover {
+      color: $nav-color-active;
+    }
+
     &--active {
       background-color: $nav-bg-active;
       color: $nav-color-active;
