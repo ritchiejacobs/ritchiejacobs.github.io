@@ -26,6 +26,9 @@ a {
   GLOBAL CLASSES
 \*------------------------------------*/
 .main {
-  margin-left: $sidebar-width;
   padding: 2rem;
+
+  @media (min-width: $breakpoint-sm) {
+    margin-left: $sidebar-width;
+  }
 }

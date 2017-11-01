@@ -1,17 +1,25 @@
 .sidebar {
   background-color: $sidebar-bg;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: $sidebar-width;
+  width: 100%;
+
+  @media (min-width: $breakpoint-sm) {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: $sidebar-width;
+  }
 
   // Elements
   &__header {
     align-items: center;
     color: $sidebar-header-color;
     display: flex;
-    padding: 4rem $padding-x;
+    padding: 2rem $padding-x;
+
+    @media (min-width: $breakpoint-sm) {
+      padding: 4rem $padding-x;
+    }
 
     h1 {
       font-size: 1.2rem;
@@ -50,11 +58,14 @@
   }
 
   &__footer {
-    bottom: 0;
     padding: $padding-y $padding-x;
-    position: absolute;
-    text-align: center;
     width: 100%;
+
+    @media (min-width: $breakpoint-sm) {
+      bottom: 0;
+      position: absolute;
+      text-align: center;
+    }
   }
 
   // Modifiers
