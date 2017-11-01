@@ -2,8 +2,7 @@ pre {
   background-color: darken($sidebar-bg, 2.5%);
   display: block;
   font-size: $font-size-sm;
-  margin-left: -$padding-x;
-  margin-right: -$padding-x;
+  margin: 2rem -#{$padding-x};
   overflow-x: scroll;
   padding: 3rem $padding-x;
   width: 100vw;

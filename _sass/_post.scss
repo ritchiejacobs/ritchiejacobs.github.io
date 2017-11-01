@@ -12,13 +12,22 @@
 
   &__meta {
     color: lighten($card-color, 50%);
-    font-size: $font-size-sm;
+    font-size: $post-meta-font-size;
     margin-bottom: 1.5rem;
     margin-top: .5rem;
   }
 
   &__meta-tags {
     margin-left: 1rem;
+  }
+
+  &__content {
+    font-size: $post-font-size;
+
+    h2 {
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
   }
 
   // Modifiers
