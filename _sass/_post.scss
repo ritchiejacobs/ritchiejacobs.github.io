@@ -1,0 +1,26 @@
+.post {
+  max-width: $breakpoint-sm;
+
+  // Elements
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__meta {
+    color: lighten($card-color, 50%);
+    font-size: $font-size-sm;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+  }
+
+  &__meta-tags {
+    margin-left: 1rem;
+  }
+
+  // Modifiers
+
+}
