@@ -26,17 +26,23 @@ In the example above we can see that the term `jump` is found at position `20` o
 
 ## String.prototype.search()
 
-The `search()` methods works the same as `indexOf()` but instead matches a regular expression
-with a string. If the query is not a regular expression it is automatically converted to `RegExp`.
+The `search()` method matches a regular expression with a string. If the query is not a regular
+expression it is automatically converted to `RegExp`. This allows some more advanced searching.
 
 ```js
 var str = "The quick brown fox jumps over the lazy dog.";
 var query = "jump";
+var regex = /jUmPs/gi; // global + case insensitive regex
 
 console.log(str.search(query)); // 20
+console.log(str.search(regex)); // 20
 ```
 
 ## String.prototype.match()
+
+The `match()` method works the same as the `search()` method. It also requires a regular
+expression as a parameter but instead returns an `Array` containing the entire matched string as
+the first element.
 
 ```js
 var str = "The quick brown fox jumps over the lazy dog.";
@@ -47,9 +53,15 @@ console.log(str.match(query)); // jump
 
 ## String.prototype.includes()
 
+This method is probably the simplest to work with. `includes()` return `true` if a string is found
+inside another string and `false` when it is not found. The method is case sensitive, so make sure
+to convert your query using `toLowerCase()` for example when using this method.
+
 ```js
 var str = "The quick brown fox jumps over the lazy dog.";
 var query = "jump";
 
 console.log(str.includes(query)); // true
 ```
+
+Note that `includes()` is not supported in Internet Explorer.
