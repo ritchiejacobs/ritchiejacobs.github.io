@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Finding a value in a string
+title: Searching within a string
 date: 2017-12-21
 tags: JavaScript
 ---
 
-When you are just starting out with JavaScript or coming from another language it isn't always clear
-how to do seemingly easy tasks, like for example finding a certain value a string. This article
+When you are just starting out with JavaScript or coming from another language it isn't always
+clear how to do seemingly easy tasks, for example finding a certain value in a string. This article
 covers some built-in JavaScript methods you can use to find characters or words inside a string.
 
 ## String.prototype.indexOf()
@@ -25,6 +25,9 @@ console.log(str.indexOf(query)); // 20
 In the example above we can see that the term `jump` is found at position `20` of the sentence.
 
 ## String.prototype.search()
+
+The `search()` methods works the same as `indexOf()` but instead matches a regular expression
+with a string. If the query is not a regular expression it is automatically converted to `RegExp`.
 
 ```js
 var str = "The quick brown fox jumps over the lazy dog.";
