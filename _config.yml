@@ -1,0 +1,18 @@
+# Site settings
+title: Ritchie Jacobs
+description: >-
+  Articles, tips and tricks on the latest front-end topics like Angular, CSS3 and HTML5.
+paginate: 5
+paginate_path: "/page:num/"
+permalink: /:title
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+# Assets
+sass:
+  sass_dir:          _sass
+  style:            :compressed

@@ -1,0 +1,35 @@
+.post {
+  max-width: $breakpoint-sm;
+
+  // Elements
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__meta {
+    color: $post-meta-color;
+    font-size: $post-meta-font-size;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+  }
+
+  &__meta-tags {
+    margin-left: 1rem;
+  }
+
+  &__content {
+    font-size: $post-font-size;
+
+    h2 {
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+  }
+
+  // Modifiers
+
+}
