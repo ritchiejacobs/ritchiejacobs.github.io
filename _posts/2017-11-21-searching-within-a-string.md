@@ -59,9 +59,9 @@ to convert your query using `toLowerCase()` for example when using this method.
 
 ```js
 var str = "The quick brown fox jumps over the lazy dog.";
-var query = "jump";
 
-console.log(str.includes(query)); // true
+console.log(str.includes("fox")); // true
+console.log(str.includes("quick red fox")); // false
 ```
 
 Note that `includes()` is not supported in Internet Explorer.
