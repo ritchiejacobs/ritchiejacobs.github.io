@@ -9,8 +9,9 @@ permalink: /:title
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-paginate
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
 
 # Assets
 sass:
