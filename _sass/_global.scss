@@ -1,58 +1,50 @@
-/*------------------------------------*\
-  GLOBAL ELEMENTS
-\*------------------------------------*/
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html,
-body {
-  height: 100%;
-}
-
-body {
-  background-color: $body-bg;
-  color: $body-color;
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $body-line-height;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  margin-top: 0;
-}
-
-p {
-  margin-bottom: 1rem;
-  margin-top: 0;
+button,
+input,
+select,
+textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: 'Rubik', sans-serif;
 }
 
 a {
-  color: $link-color;
+  color: $brand-primary;
   text-decoration: none;
+}
 
-  &:hover {
-    color: darken($link-color, 10%);
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+.content-subhead {
+  border-bottom: 1px solid #eee;
+  color: #aaa;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 0.4em 0;
+  text-transform: uppercase;
+}
+
+.content {
+  max-width: 48em;
+  padding: 2em 1em 0;
+}
+
+@media (min-width: 48em) {
+  .content {
+    margin-left: 25%;
+    padding: 2em 3em 0;
   }
-}
-
-ul {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-
-/*------------------------------------*\
-  GLOBAL CLASSES
-\*------------------------------------*/
-.main {
-  padding: 2rem;
-
-  @media (min-width: $breakpoint-sm) {
-    margin-left: $sidebar-width;
-  }
-}
-
-.page {
-  max-width: $breakpoint-sm;
 }

@@ -1,77 +1,73 @@
-.sidebar {
-  background-color: $sidebar-bg;
-  width: 100%;
+.header {
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+}
 
-  @media (min-width: $breakpoint-sm) {
-    height: 100%;
-    left: 0;
+.sidebar {
+  background: $sidebar-bg;
+  color: #fff;
+}
+
+.brand-title,
+.brand-tagline {
+  margin: 0;
+}
+
+.brand-title {
+  color: $sidebar-title-color;
+  font-size: $sidebar-title-font-size;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.brand-tagline {
+  color: rgb(176, 202, 219);
+  color: $sidebar-subtitle-color;
+  font-size: $sidebar-subtitle-font-size;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.nav-item {
+  display: block;
+  *display: inline;
+  zoom: 1;
+}
+
+.nav-item a {
+  background-color: $nav-item-bg;
+  border-radius: $nav-item-border-radius;
+  border: $nav-item-border-width solid $nav-item-border-color;
+  color: $nav-item-color;
+  font-size: $nav-item-font-size;
+  margin-top: .5em;
+  transition: all 300ms;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  background-color: $nav-item-color;
+  color: $nav-item-bg;
+  text-decoration: none;
+}
+
+@media (min-width: 48em) {
+  .header {
+    margin: 80% 2em 0;
+    text-align: right;
+  }
+
+  .sidebar {
     position: fixed;
     top: 0;
-    width: $sidebar-width;
+    bottom: 0;
   }
-
-  // Elements
-  &__header {
-    align-items: center;
-    color: $sidebar-header-color;
-    display: flex;
-    padding: 2rem $padding-x;
-
-    @media (min-width: $breakpoint-sm) {
-      padding: 4rem $padding-x;
-    }
-
-    h1 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      margin-bottom: 0;
-      margin-top: 0;
-    }
-
-    p {
-      font-size: .8rem;
-      font-weight: 100;
-      margin-bottom: 0;
-      margin-top: 0;
-    }
-  }
-
-  &__avatar {
-    border-radius: 100%;
-    height: 3.75rem;
-    margin-right: 1rem;
-    width: 3.75rem;
-  }
-
-  &__nav {}
-
-  &__link {
-    color: $nav-color;
-    display: block;
-    font-size: $font-size-sm;
-    padding: $padding-y $padding-x;
-
-    &:hover {
-      color: $nav-color-active;
-    }
-
-    &--active {
-      background-color: $nav-bg-active;
-      color: $nav-color-active;
-    }
-  }
-
-  &__footer {
-    padding: $padding-y $padding-x;
-    width: 100%;
-
-    @media (min-width: $breakpoint-sm) {
-      bottom: 0;
-      position: absolute;
-      text-align: center;
-    }
-  }
-
-  // Modifiers
-
 }

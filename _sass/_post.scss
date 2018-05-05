@@ -1,35 +1,39 @@
 .post {
-  max-width: $breakpoint-sm;
+  padding-bottom: 2em;
+}
 
-  // Elements
-  &__header {
-    margin-bottom: 2rem;
-  }
+.post-title {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 0.2em;
+}
 
-  &__title {
-    margin-bottom: 0;
-  }
+.post-description {
+  font-family: Georgia, "Cambria", serif;
+  color: #444;
+  line-height: 1.8em;
+}
 
-  &__meta {
-    color: $post-meta-color;
-    font-size: $post-meta-font-size;
-    margin-bottom: 1.5rem;
-    margin-top: .5rem;
-  }
+.post-meta {
+  color: #999;
+  font-size: 90%;
+  margin: 0;
+}
 
-  &__meta-tags {
-    margin-left: 1rem;
-  }
+.post-category {
+  background-color: #efefef;
+  color: lighten($sidebar-bg, 20%);
+  font-size: .65rem;
+  margin: 0 0.1em;
+  padding: 0.3em 1em;
+}
 
-  &__content {
-    font-size: $post-font-size;
+.post__content p {
+  font-family: Georgia, "Cambria", serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
 
-    h2 {
-      margin-bottom: 1rem;
-      margin-top: 2rem;
-    }
-  }
-
-  // Modifiers
-
+.post__content h2 {
+  margin-top: 4rem;
 }

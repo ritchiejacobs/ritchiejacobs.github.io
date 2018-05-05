@@ -1,5 +1,6 @@
 # Site settings
 title: Ritchie Jacobs
+tagline: Front-end Developer
 description: >-
   Articles, tips and tricks on the latest front-end topics like Angular, CSS3 and HTML5.
 paginate: 5

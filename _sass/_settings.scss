@@ -1,50 +1,21 @@
-/*------------------------------------*\
-  COLORS
-\*------------------------------------*/
+// COLORS
+// --------------------
 $black: #333;
-$white: #fdfdfd;
+$white: #eee;
 
-/*------------------------------------*\
-  GLOBAL
-\*------------------------------------*/
-$font-family: 'Maven Pro', 'Helvetica Neue', Arial, sans-serif;
-$font-size: 1rem;
-$font-size-sm: .875rem;
+$brand-primary: #2c2c54;
 
-$body-bg: $white;
-$body-color: #312d35;
-$body-line-height: 1.5;
+// SIDEBAR
+// --------------------
+$sidebar-bg: $brand-primary;
+$sidebar-subtitle-color: lighten($sidebar-bg, 60%);
+$sidebar-subtitle-font-size: .875rem;
+$sidebar-title-color: $white;
+$sidebar-title-font-size: 1.375rem;
 
-$padding-x: 2rem;
-$padding-y: 1rem;
-
-$breakpoint-sm: 48rem;
-
-$link-color: #3498db;
-
-/*------------------------------------*\
-  SIDEBAR
-\*------------------------------------*/
-$sidebar-bg: #312d35;
-$sidebar-width: 18rem;
-$sidebar-header-color: #ecf0f1;
-
-$nav-bg-active: darken($sidebar-bg, 2.5%);
-$nav-color: lighten($sidebar-bg, 50%);
-$nav-color-active: lighten($sidebar-bg, 65%);
-
-/*------------------------------------*\
-  SIDEBAR
-\*------------------------------------*/
-$card-bg: darken($body-bg, 2.5%);
-$card-bg-hover: darken($body-bg, 4%);
-$card-color: lighten($sidebar-bg, 15%);
-$card-color-hover: $sidebar-bg;
-$card-meta-color: lighten($sidebar-bg, 50%);
-
-/*------------------------------------*\
-  POST
-\*------------------------------------*/
-$post-font-size: 1.0625rem;
-$post-meta-color: lighten($sidebar-bg, 35%);
-$post-meta-font-size: .95rem;
+$nav-item-border-color: transparent;
+$nav-item-border-radius: 0;
+$nav-item-border-width: 2px;
+$nav-item-bg: darken($sidebar-bg, 10%);
+$nav-item-color: lighten($sidebar-bg, 60%);
+$nav-item-font-size: .875rem;
