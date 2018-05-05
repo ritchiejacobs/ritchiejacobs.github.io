@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Searching within a string
+description: Exploring some Javascript methods to find a value inside a string.
 date: 2017-12-21
 tags: JavaScript
 ---

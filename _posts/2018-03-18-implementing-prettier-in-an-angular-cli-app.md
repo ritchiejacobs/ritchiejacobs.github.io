@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Implementing Prettier in an Angular CLI app
+description: How to setup Prettier in an Angular CLI application.
 date: 2018-03-18
 tags: Angular
 ---

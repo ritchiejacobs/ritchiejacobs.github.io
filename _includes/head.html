@@ -8,7 +8,7 @@
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -28,7 +28,7 @@
   <meta property="og:title" content="{{ site.title }} &middot; {{ site.tagline }}" />
   <meta property="og:site_name" content="{{ site.title }} &middot; {{ site.tagline }}" />
   <meta property="og:url" content="http://www.ritchiejacobs.be" />
-  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:image" content="http://www.ritchiejacobs.be/public/img/fb_opengraph.jpg" />
   <meta property="fb:admins" content="1249376468" />
 
@@ -37,6 +37,6 @@
   <meta name="twitter:site" content="@ritchiejacobs" />
   <meta name="twitter:creator" content="@ritchiejacobs" />
   <meta name="twitter:title" content="{{ site.title }} &middot; {{ site.tagline }}" />
-  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:image" content="public/img/fb_opengraph.jpg">
 </head>
