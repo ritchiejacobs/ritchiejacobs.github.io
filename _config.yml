@@ -7,6 +7,8 @@ paginate: 5
 paginate_path: "/page:num/"
 permalink: /:title
 
+GA_TRACKING_ID: "UA-42577887-5"
+
 # Build settings
 markdown: kramdown
 plugins:
