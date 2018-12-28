@@ -15,8 +15,18 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-archives
 
 # Assets
 sass:
   sass_dir:          _sass
   style:            :compressed
+
+jekyll-archives:
+  enabled:
+    - tags
+  layout: default
+  layouts:
+    tag: tags
+  permalinks:
+    tag: '/tag/:name/'
