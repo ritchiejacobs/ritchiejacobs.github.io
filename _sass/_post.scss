@@ -1,5 +1,9 @@
 .post {
   padding-bottom: 2em;
+
+  &__header {
+    margin-bottom: 3rem;
+  }
 }
 
 .post-title {
@@ -12,20 +16,6 @@
   font-family: Georgia, "Cambria", serif;
   color: #444;
   line-height: 1.8em;
-}
-
-.post-meta {
-  color: #999;
-  font-size: 90%;
-  margin: 0;
-}
-
-.post-category {
-  background-color: #efefef;
-  color: lighten($sidebar-bg, 20%);
-  font-size: .65rem;
-  margin: 0 0.1em;
-  padding: 0.3em 1em;
 }
 
 .post__content p {
@@ -53,4 +43,30 @@
 
 .post_share-buttons {
   display: flex;
+}
+
+// META
+.meta {
+  color: #777;
+  font-size: .65rem;
+
+  &__tags,
+  &__time,
+  &__author {
+    display: inline-block;
+  }
+
+  &__tags,
+  &__time {
+    &::after {
+      content: '\02014';
+      display: inline;
+      margin-left: .25rem;
+      margin-right: .25rem;
+    }
+  }
+
+  &__tag {
+    color: lighten($sidebar-bg, 30%);
+  }
 }

@@ -6,9 +6,15 @@ layout: default
 
   <header class="post__header">
     <h1 class="post__title">{{ page.title }}</h1>
-    <div class="post__meta">
-      <span class="post-category">{{ page.date | date_to_string }}</span>
-      <span class="post-category">{{ page.tags }}</span>
+    <div class="meta">
+      <div class="meta__tags">
+        Tagged in
+        {% for tag in page.tags %}
+          <a class="meta__tag" href="/tag/{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      <div class="meta__time">Published on <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time></div>
+      <div class="meta__author">Written by Ritchie Jacobs</div>
     </div>
   </header>
 
