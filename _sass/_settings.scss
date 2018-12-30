@@ -3,12 +3,16 @@
 $black: #333;
 $white: #eee;
 
-$brand-primary: #2c2c54;
+$brand-primary: #3742fa;
+
+// GENERAL
+// --------------------
+$link-color: $brand-primary;
 
 // SIDEBAR
 // --------------------
 $sidebar-bg: $brand-primary;
-$sidebar-subtitle-color: lighten($sidebar-bg, 60%);
+$sidebar-subtitle-color: rgba($white, .75);
 $sidebar-subtitle-font-size: .875rem;
 $sidebar-title-color: $white;
 $sidebar-title-font-size: 1.375rem;
@@ -16,6 +20,6 @@ $sidebar-title-font-size: 1.375rem;
 $nav-item-border-color: transparent;
 $nav-item-border-radius: 0;
 $nav-item-border-width: 2px;
-$nav-item-bg: darken($sidebar-bg, 10%);
-$nav-item-color: lighten($sidebar-bg, 60%);
+$nav-item-bg: darken($sidebar-bg, 5%);
+$nav-item-color: $white;
 $nav-item-font-size: .875rem;
