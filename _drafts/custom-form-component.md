@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a custom form component
-description: How to setup Prettier in an Angular CLI application.
+description: How to create a custom Reactive forms component for an Angular application.
 tags: Angular
 ---
 
