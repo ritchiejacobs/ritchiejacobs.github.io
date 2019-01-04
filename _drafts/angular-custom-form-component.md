@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creating a custom form component
-description: How to create a custom Reactive forms component for an Angular application.
+title: Creating a custom form component in Angular
+description: How to create a custom form component for an Angular application.
 tags: Angular
 ---
 
