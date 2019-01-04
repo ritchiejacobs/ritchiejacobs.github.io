@@ -5,7 +5,8 @@ pre {
   padding: 1rem;
 }
 
-p > code {
+p > code,
+li > code {
   background-color: #eee;
   font-size: 14px;
   padding: .25em .5em;
