@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a custom form component in Angular
-description: How to create a custom form component for an Angular application.
+description: Learn how to build a custom form component for your Angular application.
 date: 2019-01-04
 tags: Angular
 ---
