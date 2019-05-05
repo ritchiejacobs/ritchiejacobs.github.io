@@ -4,6 +4,12 @@
   &__header {
     margin-bottom: 3rem;
   }
+
+  iframe {
+    display: block;
+    min-height: 400px;
+    width: 100%;
+  }
 }
 
 .post-title {
