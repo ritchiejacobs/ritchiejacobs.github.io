@@ -14,7 +14,10 @@ building interactive applications and experimenting with new technologies.
 
 I'm currently active as a Front-end developer at [Rydoo](https://rydoo.com).
 
+![Profile picture](/ritchie-jacobs.png "Ritchie Jacobs")
+
 ## Links
 - [Twitter](https://twitter.com/ritchiejacobs)
 - [Github](https://github.com/ritchiejacobs)
 - [Codepen](https://codepen.io/ritchiejacobs)
+

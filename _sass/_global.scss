@@ -38,13 +38,21 @@ h3 {
 }
 
 .content {
-  max-width: 48em;
+  max-width: $breakpoint-lg;
   padding: 2em 1em 0;
-}
 
-@media (min-width: 48em) {
-  .content {
+  @media (min-width: $breakpoint-lg) {
     margin-left: 25%;
     padding: 2em 3em 0;
+  }
+}
+
+#about ~ p > img {
+  display: block;
+  margin: 2rem auto;
+
+  @media (min-width: $breakpoint-lg) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
