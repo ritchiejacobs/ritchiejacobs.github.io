@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.6.0"
+gem "jekyll", "~> 3.6.3"
 # gem "github-pages", group: :jekyll_plugins
 # GitHub Pages: run `bundle update github-pages`
 
